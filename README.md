@@ -17,13 +17,14 @@ Thanks to [InnoGames](https://www.innogames.com/) for their great browser game.
 
 ## SECURITY WARNING
 
-TWLan v1 (the fan-made LAN version -- not to be confused with Tribal Wars by InnoGames!) is legacy software depending on a bunch of other outdated software. Both TWLan and its dependencies may have several security vulnerabilities,
-thus it should be run it trusted environments only. Running it publicly accessible, which is forbidden by the license of DSLan, can result in your machine getting compromised. To sum up, running TWLan v1 is potentially dangerous and should essentially not be done at all.
+TWLan v1 (the fan-made LAN version -- not to be confused with the original 'Tribal Wars' online browsergame by InnoGames!) is legacy software depending on a bunch of other outdated software.
+Both TWLan and its dependencies may have several security vulnerabilities, thus it should be run it trusted environments only.
+Running it publicly accessible, which is forbidden by the license of DSLan anyway, can result in your machine getting compromised.
+To sum up, running TWLan v1 is potentially dangerous and should essentially not be done at all.
 
-The scripts in this package are intended for experimental purposes only.
 
-The scripts in this package can be used to download, build and setup such outdated software.
-You may use them at your own risk. But, you have been warned:
+The scripts in this package can be used to download, build and setup such outdated software and are intended for experimental purposes only.
+You may use them at your own risk. But, you have been warned.
 
 ```
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
@@ -34,6 +35,7 @@ FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
 ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 ```
+
 
 ## Usage
 
