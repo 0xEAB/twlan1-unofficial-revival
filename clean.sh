@@ -24,7 +24,7 @@ echo ""
 
 ## Purge build directory if it exists
 if [ -d "$TWLAN_REVIVAL_TMP" ]; then
-    echo $'\033[0;33m[#]\033[m Purging build directory: $TWLAN_REVIVAL_TMP'
+    echo $'\033[0;33m[#]\033[m Purging build directory:' $TWLAN_REVIVAL_TMP
     rm -rf $TWLAN_REVIVAL_TMP
 else
     echo $'\033[0;33m[!]\033[m Build directory does not exist:' $TWLAN_REVIVAL_TMP $'

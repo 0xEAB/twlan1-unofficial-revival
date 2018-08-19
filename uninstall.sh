@@ -22,7 +22,7 @@ echo ""
 
 ## Purge install directory if it exists
 if [ -d "$TWLAN_REVIVAL_DIR" ]; then
-    echo $'\033[0;33m[#]\033[m Purging installation directory: $TWLAN_REVIVAL_DIR'
+    echo $'\033[0;33m[#]\033[m Purging installation directory:' $TWLAN_REVIVAL_DIR
     rm -rf $TWLAN_REVIVAL_DIR
 else
     echo $'\033[0;33m[!]\033[m Installation directory does not exist:' $TWLAN_REVIVAL_DIR $'
