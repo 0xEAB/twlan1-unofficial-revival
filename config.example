@@ -11,11 +11,11 @@ TWLAN_REVIVAL_ERR=$(pwd)/revival-error.log
 ##      1           <-- disabled (Recommended option for low-memory machines)
 ##      2           <-- up to 2 jobs
 ##
-##      $(nproc)    <-- as many as CPU threads
+##      $(nproc)    <-- as many jobs as CPU threads
 ##                       (Warning: This can lead to pretty high memory usage)
 ##
 ##      $(((($(nproc)-1)/2)+1)) <-- half as many jobs as CPU threads
-TWLAN_REVIVAL_JOB=$(((($(nproc)-1)/2)+1))
+TWLAN_REVIVAL_JOB=2
 
 ## Target path to install TWLan into
 TWLAN_REVIVAL_DIR=/opt/twlan1revival

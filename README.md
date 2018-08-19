@@ -17,7 +17,6 @@ Thanks to [InnoGames](https://www.innogames.com/) for their great browser game.
 
 ## Usage
 
-This script is meant to be used on UNIX-like systems.
+This scripts are meant to be used on UNIX-like systems along with GNU Bash.
 
 For Windows please refer to the [official DSLan v1.4](https://twlan.org/showthread.php?tid=43401&pid=193753#pid193753) package.
-
