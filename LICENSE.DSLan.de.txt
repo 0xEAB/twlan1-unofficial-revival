@@ -1,0 +1,7 @@
+# Allgemeine Nutzungsbedingungen - DSLan
+
+1.  Es gibt keinen Support über Die Stämme. Sollte ich Probleme mit der DSLan haben, so wende ich mich an http://dslan.gfx-dose.de.
+2.  Ich werde die DSLan nicht im Internet auf einem Server betreiben oder spielen, da ich mich sonst strafbar mache! Grundsätzlich ist aber eine Sperre gegen das Betreiben im Internet eingebaut.
+3.  Es ist softwaretechnisch ein Spielerlimit von 15 Spielern festgelegt. Dieses Spielerlimit darf auf keinen Fall durch den Gebrauch von externen Tools etc. überschritten werden!
+4.  Die DS LAN darf nur im lokalen Netzwerk gespielt werden (siehe Punkt 2).
+5.  Die Betreiber übernehmen für eventuelle Schäden keine Haftung!

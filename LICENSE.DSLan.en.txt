@@ -1,0 +1,7 @@
+# General Terms and Conditions - TWLan
+
+1.  There is no support from Tribal Wars. If you have any questions about TWLan, you should visit http://www.twlan.org/.
+2.  I won't host TWLan online, otherwise I'm commiting a criminal delict.
+3.  There is a hard-coded limit of 15 players. In no way may this limit be exceeded.
+4.  TWLan may only be played in a local network. (see term 2)
+5.  The creators of TWLan are in no way responsible for any damage caused.

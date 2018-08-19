@@ -6,9 +6,11 @@ Please note that this is an unofficial project not supported by the developers o
 
 ## About TWLan
 
-TWLan (aka DSLan) is a rebuild of the [Tribal Wars browser game](https://www.tribalwars.net/), which lets you set up and play on your own local server.
-It is proprietary software licensed under [the linked terms](https://twlan.org/showthread.php?tid=763).
-The currently latest version, v2A, is licensed under the [TWLan License v1.0](https://github.com/TWLan/Wiki/wiki/License).
+<img src="https://twlan.org/img/logo.png" alt="TWLan logo"/>
+
+**TWLan** (aka **DSLan**) is a rebuild of the [Tribal Wars browser game](https://www.tribalwars.net/), which lets you set up and play on your own local server.
+
+It is proprietary software licensed under the terms specified in the [General Terms and Conditions](LICENSE.DSLan.de.txt) ([🇬🇧 translation](LICENSE.DSLan.en.txt)) it ships with plus those in the [Rechtliche Hinweise](https://twlan.org/showthread.php?tid=763) thread.
 
 Thanks to [InnoGames](https://www.innogames.com/) for their great browser game.
 
