@@ -1,0 +1,28 @@
+# TWLan 1: The Unofficial Revival
+#  Config file
+
+## Setup log
+TWLAN_REVIVAL_LOG=$(pwd)/revival.log
+## Setup error log
+TWLAN_REVIVAL_ERR=$(pwd)/revival-error.log
+
+## Parallel Execution, number of maximum jobs executed at the same time
+##  Example values:
+##      1           <-- disabled (Recommended option for low-memory machines)
+##      2           <-- up to 2 jobs
+##
+##      $(nproc)    <-- as many as CPU threads
+##                       (Warning: This can lead to pretty high memory usage)
+##
+##      $(((($(nproc)-1)/2)+1)) <-- half as many jobs as CPU threads
+TWLAN_REVIVAL_JOB=$(((($(nproc)-1)/2)+1))
+
+## Target path to install TWLan into
+TWLAN_REVIVAL_DIR=/opt/twlan1revival
+## (Usually temporary) build directory where source files will get downloaded into
+TWLAN_REVIVAL_TMP=/tmp/twlan1revival
+
+## Target path to install OpenSSL into
+TWLAN_REVIVAL_SSL=$TWLR/openssl
+## Target path to install PHP into
+TWLAN_REVIVAL_PHP=$TWLR/php
