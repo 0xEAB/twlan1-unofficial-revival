@@ -23,6 +23,6 @@ TWLAN_REVIVAL_DIR=/opt/twlan1revival
 TWLAN_REVIVAL_TMP=/tmp/twlan1revival
 
 ## Target path to install OpenSSL into
-TWLAN_REVIVAL_SSL=$TWLR/openssl
+TWLAN_REVIVAL_SSL=$TWLAN_REVIVAL_DIR/openssl
 ## Target path to install PHP into
-TWLAN_REVIVAL_PHP=$TWLR/php
+TWLAN_REVIVAL_PHP=$TWLAN_REVIVAL_DIR/php
