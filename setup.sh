@@ -20,6 +20,20 @@ set -e
 ## Load config
 . "$TDIR/config"
 
+## Prepare logfiles
+echo '
+
+
+
+' >>$TWLAN_REVIVAL_LOG
+date >>$TWLAN_REVIVAL_LOG
+echo '
+
+
+
+' >>$TWLAN_REVIVAL_ERR
+date >>$TWLAN_REVIVAL_ERR
+
 ## Installation directory
 if [ -d "$TWLAN_REVIVAL_DIR" ]; then
     echo $'\033[0;33m[!]\033[m Installation directory already existing:' $TWLAN_REVIVAL_DIR$'
@@ -35,7 +49,7 @@ if [ -d "$TWLAN_REVIVAL_DIR" ]; then
 else
     echo $'\033[0;33m[#]\033[m Creating installation directory:' $TWLAN_REVIVAL_DIR
     mkdir $TWLAN_REVIVAL_DIR
-    echo ""
+    echo ''
 fi
 
 ## Build directory
@@ -57,13 +71,12 @@ fi
 ## Parallel execution
 echo $'\033[0;33m[i]\033[m Executing up to\033[1;32m' $TWLAN_REVIVAL_JOB $'jobs concurrently\033[m
 
-'$TLINE"
+'"$TLINE
 "
 
 ## Build
 pushd $TWLAN_REVIVAL_TMP >>$TWLAN_REVIVAL_LOG
 . "$TDIR/components/openssl.sh"
+. "$TDIR/components/php4.sh"
 
-
-echo "
-Done."
+echo 'Done.'
