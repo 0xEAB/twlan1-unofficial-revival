@@ -78,5 +78,6 @@ echo $'\033[0;33m[i]\033[m Executing up to\033[1;32m' $TWLAN_REVIVAL_JOB $'jobs 
 pushd $TWLAN_REVIVAL_TMP >>$TWLAN_REVIVAL_LOG
 . "$TDIR/components/openssl.sh"
 . "$TDIR/components/php4.sh"
+. "$TDIR/components/eaccelerator.sh"
 
 echo 'Done.'
