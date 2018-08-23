@@ -67,6 +67,15 @@ else
     echo $'\033[0;33m[#]\033[m Installing PHP4'
     make install >>$TWLAN_REVIVAL_LOG 2>>$TWLAN_REVIVAL_ERR
 
+    echo $'\033[0;33m[#]\033[m Copying \'php.ini\''
+    cp 'php.ini-recommended' "$TWLAN_REVIVAL_PHP/lib/php.ini"
+
+    echo $'\033[0;33m[#]\033[m Patching \'php.ini\''
+    cat "$TDIR/php.ini.patch" \
+        | sed -e "s|<PHP_PATH_HERE>|$(realpath $TWLAN_REVIVAL_PHP)|g" \
+        | patch -d "$TWLAN_REVIVAL_PHP/lib/" \
+        >>$TWLAN_REVIVAL_LOG
+
     popd >>$TWLAN_REVIVAL_LOG
 
     if [ "$WORKAROUND_PNG" == "yes" ]; then
