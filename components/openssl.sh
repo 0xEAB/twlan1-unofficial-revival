@@ -3,15 +3,17 @@
 #   OpenSSL module
 
 if [ -d "$TWLAN_REVIVAL_SSL" ]; then
-    echo $'\033[1;33mOpenSSL target directory already exists.
+    echo $'\033[0;33m[!]\033[1;33m OpenSSL target directory already exists.
     \033[1;35mSkipping OpenSSL installation...\033[m'
 else
-    if ! [ -f "openssl-0.9.8zh" ]; then
+    echo $'\033[0;33m[i]\033[m OpenSSL'
+
+    if ! [ -d 'openssl-0.9.8zh' ]; then
         echo $'\033[0;33m[#]\033[m Downloading and extracting OpenSSL'
         curl -s "https://www.openssl.org/source/old/0.9.x/openssl-0.9.8zh.tar.gz" | tar -xz
     fi
 
-    pushd "openssl-0.9.8zh" >>$TWLAN_REVIVAL_LOG
+    pushd 'openssl-0.9.8zh' >>$TWLAN_REVIVAL_LOG
     mkdir $TWLAN_REVIVAL_SSL
 
     echo $'\033[0;33m[#]\033[m Configuring OpenSSL'
@@ -29,3 +31,7 @@ else
 
     popd >>$TWLAN_REVIVAL_LOG
 fi
+
+echo "
+$TLINE
+"
