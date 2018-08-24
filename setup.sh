@@ -79,5 +79,6 @@ pushd $TWLAN_REVIVAL_TMP >>$TWLAN_REVIVAL_LOG
 . "$TDIR/components/openssl.sh"
 . "$TDIR/components/php4.sh"
 . "$TDIR/components/eaccelerator.sh"
+. "$TDIR/components/tw1content.sh"
 
 echo 'Done.'
