@@ -9,12 +9,6 @@ echo $'\033[1;36mTWLan 1: Unofficial Revival - setup script
 \033[m'$TLINE"
 "
 
-if ! type "curl" > /dev/null; then
-    echo $'\033[0;33m[x]\033[m curl is not available.
-    \033[1;31mAborting.'
-    exit 1
-fi
-
 set -e
 
 ## Load config

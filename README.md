@@ -4,6 +4,26 @@
 Please note that this is an unofficial project not supported by the developers of the TWLan.
 
 
+## Usage
+
+1. Prerequisites
+    1. Read the SECURITY WARNING below.
+    2. Read the bundled LICENSE files. In order to use *TWLan 1* you must accept those licenses.
+    3. Make sure you have a C/C++ compiler, `make` and all required libraries/headers installed.
+    4. Don't ask here what libs you'll need. Check the manuals of the respective programs (...or just start and read the error log to find out what's missing then).
+    5. Also you'll sure you have the following utils installed: Bash, cURL, patch, tar
+
+2. TWLan v1 installation + compatible PHP
+    1. Create a setup config file: `cp config.example config`.
+    2. In order to customize the installation edit the `config` file.
+    3. Start the installation process with `./setup.sh`.
+
+3. Server setup
+    1. There's no need to stick to legacy stuff here - the latest versions are perfectly fine. Just install those server apps the "usual way". If you have already such ones installed, use them.
+    2. Install a FastCGI-compatible webserver (e.g. lighttpd, nginx, OpenLiteSpeed, Apache). Let it serve the TWLan content folder and configure PHP4 as script handler.
+    3. Install MySQL/MariaDB. Add a new user and import `dslan.sql` from your Revival installation. (In order to allow PHP4 to connect you might need some tricks like `OLD_PASSWORD()`. (If you're living on the edge, you could also just create a local-only user with no password.))
+    4. Configure your TWLan installation (esp. database connection), see `include/config.php`.
+
 ## About TWLan
 
 <img src="https://twlan.org/img/logo.png" alt="TWLan logo"/>
