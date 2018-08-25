@@ -10,11 +10,12 @@ else
 
     if ! [ -d 'twlan/htdocs' ]; then
         echo $'\033[0;33m[#]\033[m Downloading and extracting content'
-        curl -s 'http://twlan.lekensteyn.nl/files/twlan-1.4.3L1.sh' | tail -n+133 | tar -xz twlan/htdocs
+        curl -s 'http://twlan.lekensteyn.nl/files/twlan-1.4.3L1.sh' | tail -n+133 | tar -xz twlan/htdocs twlan/extra/dslan.sql
     fi
 
     echo $'\033[0;33m[#]\033[m Installing content'
     cp -R 'twlan/htdocs' "$TWLAN_REVIVAL_WWW"
+    cp 'twlan/extra/dslan.sql' "$TWLAN_REVIVAL_DIR"
 fi
 
 echo "
